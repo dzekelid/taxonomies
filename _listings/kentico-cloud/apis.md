@@ -8,8 +8,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28870-kent
 x-kinRank: "7"
 x-alexaRank: "369033"
 tags: Taxonomies
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/taxonomies/master/_listings/kentico-cloud/apis.md
 specificationVersion: "0.14"
 apis:
@@ -77,6 +77,38 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/taxonomies/master/_listings/kentico-cloud/975bf280fd91488c994c2f04416e5ee3taxonomies-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/taxonomies/master/_listings/kentico-cloud/975bf280fd91488c994c2f04416e5ee3taxonomies-get-openapi.md
+- name: Kentico Cloud - List taxonomy groups
+  x-api-slug: 975bf280fd91488c994c2f04416e5ee3taxonomies-get
+  description: |-
+    Retrieve a paginated list of taxonomy groups in your project.
+
+    By default, the API returns all taxonomy groups ordered alphabetically by codename, but [pagination can be customized](https://developer.kenticocloud.com/v1/reference#listing-response).
+
+    See <https://developer.kenticocloud.com/v1/reference#list-taxonomy-groups> for more details.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28870-kenticocloud-com.jpg
+  humanURL: https://kenticocloud.com/
+  baseURL: https://deliver.kenticocloud.com//
+  tags: SaaS, Technology, Enterprise, Relative Data, Service API, Cloud
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/taxonomies/master/_listings/kentico-cloud/975bf280fd91488c994c2f04416e5ee3taxonomies-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/taxonomies/master/_listings/kentico-cloud/975bf280fd91488c994c2f04416e5ee3taxonomies-get-openapi.md
+- name: Kentico Cloud - View a taxonomy group
+  x-api-slug: 975bf280fd91488c994c2f04416e5ee3taxonomiespersonas-get
+  description: |-
+    Retrieve a specific taxonomy group from your project by specifying its codename.
+
+    See <https://developer.kenticocloud.com/v1/reference#view-a-taxonomy-group> for more details.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28870-kenticocloud-com.jpg
+  humanURL: https://kenticocloud.com/
+  baseURL: https://deliver.kenticocloud.com//
+  tags: SaaS, Technology, Enterprise, Relative Data, Service API, Cloud
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/taxonomies/master/_listings/kentico-cloud/975bf280fd91488c994c2f04416e5ee3taxonomiespersonas-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/taxonomies/master/_listings/kentico-cloud/975bf280fd91488c994c2f04416e5ee3taxonomiespersonas-get-openapi.md
 x-common:
 - type: x-blog-rss
   url: https://kenticocloud.com/rss

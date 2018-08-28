@@ -6,8 +6,8 @@ image: https://s3.amazonaws.com/kinlane-productions/api-evangelist/api-butterfly
 x-kinRank: "7"
 x-alexaRank: "10214098"
 tags: Taxonomies
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/taxonomies/master/_listings/edit-cdm-library/apis.md
 specificationVersion: "0.14"
 apis: []

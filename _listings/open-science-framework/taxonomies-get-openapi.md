@@ -1,9 +1,24 @@
+---
 swagger: "2.0"
 x-collection-name: Open Science Framework
-x-complete: 1
+x-complete: 0
 info:
-  title: Open Science Framework
-  description: osf-provides-free-and-open-source-project-management-support-for-researchers-across-the-entire-research-lifecycle--as-a-collaboration-tool-osf-helps-researchers-work-on-projects-privately-with-a-limited-number-of-collaborators-and-make-parts-of-their-projects-public-or-make-all-the-project-publicly-accessible-for-broader-dissemination--as-a-workflow-system-osf-enables-connections-to-the-many-services-researchers-already-use-to-streamline-their-process-and-increase-efficiency--as-a-flexible-repository-it-can-store-and-archive-research-data-protocols-and-materials--
+  title: Open Science Framework List all taxonomies
+  description: |-
+    A paginated list of all [bepress disciplines taxonomies](https://www.bepress.com/wp-content/uploads/2016/12/Digital-Commons-Disciplines-taxonomy-2017-01.pdf).
+    Note: this API endpoint is under active development, and is subject to change in the future.
+    #### Returns
+    Returns a JSON object containing `data` and `links` keys.
+
+    The `data` key contains an array of up to 10 taxonomies. Each resource in the array is a separate taxonomy object.
+
+    The `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).
+
+    This request should never return an error.
+    #### Filtering
+    You can optionally request that the response only include taxonomies that match your filters by utilizing the `filter` query parameter, e.g. https://api.osf.io/v2/taxonomies/?filter['id']='{taxonomy_id}'.
+
+    Taxonomies may be filtered by their `id`, `parents`, and `text`.
   contact:
     name: OSF
     url: https://osf.io/support
@@ -71,25 +86,17 @@ paths:
           description: OK
       tags:
       - Taxonomies
-  /taxonomies/{taxonomy_id}/:
-    get:
-      summary: Retrieve a taxonomy
-      description: |-
-        Retrieves the details of a taxonomy.
-        #### Returns
-
-        Returns a JSON object with a `data` key containing the representation of the requested taxonomy, if the request is successful.
-
-        If the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.
-      operationId: taxonomies_read
-      x-api-path-slug: taxonomiestaxonomy-id-get
-      parameters:
-      - in: path
-        name: taxonomy_id
-        description: The unique identifier of the taxonomy
-      responses:
-        200:
-          description: OK
-      tags:
-      - Taxonomies
-      - Taxonomy
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---

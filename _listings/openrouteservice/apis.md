@@ -6,8 +6,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/882-openro
 x-kinRank: "7"
 x-alexaRank: "6266"
 tags: Taxonomies
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/taxonomies/master/_listings/openrouteservice/apis.md
 specificationVersion: "0.14"
 apis:
@@ -67,6 +67,34 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/taxonomies/master/_listings/openrouteservice/idguid-format-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/taxonomies/master/_listings/openrouteservice/idguid-format-get-openapi.md
+- name: AP Metadata Services - Taxonomy Information
+  x-api-slug: idguid-format-get
+  description: Returns the taxonomy information for the specified GUID of an AP term
+    and the specified format.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/882-openrouteservice.jpg
+  humanURL: http://wiki.openstreetmap.org/wiki/OpenRouteService#ORS_.22API.22
+  baseURL: https://cv.ap.org//
+  tags: Bicycle, Routes, Directions, Technology, SaaS, Routes, Routes, General Data,
+    Relative Data, Service API, Locations, Maps
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/taxonomies/master/_listings/openrouteservice/idguid-format-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/taxonomies/master/_listings/openrouteservice/idguid-format-get-openapi.md
+- name: AP Metadata Services - Taxonomy Information
+  x-api-slug: dauthority-format-get
+  description: Returns the taxonomy information for the specified authority and the
+    specified format.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/882-openrouteservice.jpg
+  humanURL: http://wiki.openstreetmap.org/wiki/OpenRouteService#ORS_.22API.22
+  baseURL: https://cv.ap.org//
+  tags: Bicycle, Routes, Directions, Technology, SaaS, Routes, Routes, General Data,
+    Relative Data, Service API, Locations, Maps
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/taxonomies/master/_listings/openrouteservice/dauthority-format-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/taxonomies/master/_listings/openrouteservice/dauthority-format-get-openapi.md
 x-common:
 - type: x-website
   url: http://wiki.openstreetmap.org/wiki/OpenRouteService#ORS_.22API.22
